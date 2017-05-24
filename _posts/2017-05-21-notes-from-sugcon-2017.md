@@ -2,7 +2,7 @@
 layout: post
 title: Notes from SUGCON 2017
 date: 2017-05-22
-categories: sugcon sitecore
+categories: sitecore sugcon
 ---
 I've been intending to start blogging my adventures in Sitecore for far too long now. Returning from this year’s SUGCON event in Amsterdam has given me the motivation I need to get something up and running.
 
