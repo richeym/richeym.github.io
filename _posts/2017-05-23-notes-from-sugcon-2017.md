@@ -1,32 +1,32 @@
 ---
 layout: post
 title: Notes from SUGCON 2017
-date: 2017-05-22
+date: 2017-05-23
 categories: sitecore sugcon
 ---
-I've been intending to start blogging my adventures in Sitecore for far too long now. Returning from this year’s SUGCON event in Amsterdam has given me the motivation I need to get something up and running.
+I've been intending to start blogging my adventures in Sitecore for far too long now. Returning from this year’s SUGCON event in Amsterdam has finally given me the motivation needed to get something up and running.
 
-I attended the two-day conference with a couple of developer friends & colleagues from Mando. With there being a number of "switch" sessions of talks running in parallel we adopted a "divide and conquer" approach in order to personally attend as many individual talks as we could. 
+I attended the two-day conference with a couple of developer friends & colleagues from Mando. With there being a number of "switch" sessions of talks running in parallel we adopted a divide and conquer approach so that we cound attend as many individual talks as we could and share our finding. 
 
-There were quite a few that I would have loved to have attended by didn't get to (sorry Roslyn) but here are my observations from some of the more interesting ones I got to.
+There were quite a few talks that I would have loved to have attended but didn't make it t (sorry Roslyn). Here are some of my thoughts and observations from the some of the more interesting ones. 
 
 ## Omni-Channel Showcase 
 
-Bas Litjen & Rob Habraken showed off a project they'd been working on for the last five months - an awesome experiment involving Microsoft Cognitive Services, Sitecore's xDb and a Raspberry Pi-powered robot named Robbie. 
+Bas Litjen & Rob Habraken presented a project they'd been working on for the last five months - an awesome experiment involving Microsoft Cognitive Services, Sitecore's xDb and a Raspberry Pi-powered robot named Robbie. 
 
-It was great seeing Robbie "identify" the speaker as an xDb contact and then engage in a personalized chat. Bas & Rob had created "mood" profile cards in Sitecore to enable Robbie to respond differently based on their facial expressions. 
+It was great seeing Robbie identify the speaker as an xDb contact and then engage in a personalized chat. At one point he identified both speakers simultaneously, effectively running two xDb sessions at once. Bas & Rob had created pattern cards in Sitecore to enable Robbie to ask different questions based on their facial expressions. 
 
-It was a shame that the live-demo gremlins struck in the form of unreliable conference Wi-Fi, making it difficult for Ben & Rob to show us the end to end experience but it was still a fascinating demo and a great illustration of how Sitecore can engage with customers when you think outside of the standard mobile and website channels.
+It was a shame that the live-demo gremlins struck in the form of unreliable conference Wi-Fi, making it difficult for Ben & Rob to show us the end to end experience but it was still a fascinating demo and a great illustration of how Sitecore can engage with customers outside of conventional website channels.
 
 Robbie is an ongoing project and one I'll definitely be following.
 
 ## Publishing Service 2.0
 
-The core Sitecore publishing service is long-overdue an update as it is quite primitive compared to other enterprise CMS systems. Aside from being generally slow and un-optimized, the lack of feedback given to CMS users during publishing is also an issue. I'm sure at some point we've all become frustrated and restarted a publishing operation thinking it has got "stuck", which only results in flooding the publish queue with even more requests and grinding things to a halt.
+The core Sitecore publishing service is long-overdue an update as it is quite primitive compared to other enterprise CMS systems. Aside from being generally slow and un-optimized, the lack of feedback given to CMS users during publishing is also an issue. I'm sure at some point we've all become frustrated and restarted a publishing operation thinking it has become "stuck", which only results in flooding the publish queue with even more requests and grinding things to a halt.
 
-Sitecore have released version 2.0 of the new publishing service, which is available as a separate module and built on .NET Core. 
+The new publishing service is a separate module developed by Sitecore, built on .NET Core and they've now just released version 2.0, available as a free module. 
 
-The module replaces the standard publishing options with a UI that is much more user friendly and also includes a publishing queue dialog so users can find out exactly what publishing operations are in progress. It also hides the concept of smart and incremental publishing (are editors really expected to understand what those concepts mean?) and replaces them with a simple publish operation. The "republish all content" option is restricted to admin's only. 
+The publishing service replaces the standard publish options with a more editor-friendly interface and also includes a publishing queue dialog so users can find out exactly what publishing operations are in progress. It also hides the concept of smart and incremental publishing (are editors really expected to understand what those concepts mean?) and replaces them with a simple publish operation. The "republish all content" option is restricted to admin's only. 
 
 The publishing UI changes alone would make this a big improvement but the team have also taken steps to improve every aspect of the publishing services performance. Stephen presented some benchmark results using SQL Azure which were pretty impressive:
 
@@ -47,7 +47,7 @@ Mike Edwards of Glass Mapper fame talked about the common anti-patterns he often
 
 * The performance implications of using a Glass base class particularly when not using type inference and template enforcement.
 * Mapping data models vs view models. I must admit I'm often guilty of simply building up Glass models that follow the template structure in Sitecore, whereas it can sometimes be a more performant approach to build and map rendering-specific view models instead. This approach will probably be a more natural fit for Helix-based implementations too.
-* Fluent mappings. I've always used attribute-based mappings - not sure why as I normally gravitate towards fluent mapping in for example, nHibernate. I think I tried using the fluent mapping API back in Glass v3 but wasn't overly impressed. The talk has persuaded me to give it another try although Mike did admit at the end that he still uses attribute-mappings himself...
+* Fluent mappings. I've always used attribute-based mappings - not sure why as I normally gravitate towards fluent mapping in for example, nHibernate. I think I tried using the fluent mapping API back in Glass v3 and didn't get on with it. The changes to the API have persuaded me to re-evaluate it although Mike did admit at the end that he still uses attribute-mappings himself...
 
 It was a great talk. I went along unconvinced it would be of much benefit as I've been using Glass for a few years now but I came away feeling like I'd learned something.
 
@@ -65,9 +65,9 @@ Unfortunately the live-demo didn't quite go to plan, but Thomas has since [recor
 
 ## Sitecore MVC Developers journey
 
-A talk by Christian James Hansen who gave an overview of his Sitecore MVC library - Propeller MVC. 
+Christian James Hansen gave an overview of his Sitecore MVC library - Propeller MVC, which is a light-weight ORM and set of HTML helpers.
 
-I hadn't heard of Propeller before so will keep an eye on it. It will be interesting to see whether it can be adopted with other Sitecore ORM's, especially the ubiquitous Glass Mapper. 
+I hadn't heard of Propeller before so will keep an eye on it. It will be interesting to see whether it can find a place alongside the other Sitecore libraries occupying the same space, especially the ubiquitous Glass Mapper. 
 
 The source code is available on [GitHub](https://github.com/galtrold/propeller.mvc)
 
