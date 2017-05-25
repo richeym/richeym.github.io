@@ -4,7 +4,7 @@ title: Notes from SUGCON 2017
 date: 2017-05-23
 categories: sitecore sugcon
 ---
-I've been intending to start blogging my adventures in Sitecore for far too long now. Returning from this year’s SUGCON event in Amsterdam has finally given me the motivation needed to get something up and running.
+I've been intending to start blogging my adventures in Sitecore for far too long now. Attending this year’s SUGCON Europe event in Amsterdam has finally given me the motivation needed to get something up and running.
 
 I attended the two-day conference with a couple of developer friends & colleagues from Mando. With there being a number of "switch" sessions of talks running in parallel we adopted a divide and conquer approach so that we cound attend as many individual talks as we could and share our finding. 
 
